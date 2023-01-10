@@ -78,7 +78,9 @@ header {
     font-size: 20px;
 }
 
-.logo{display: none;}
+.logo{
+    display: none;
+}
 
 /*-------Ajustes nav-----------*/
 nav input#check {
@@ -95,6 +97,7 @@ header ul {
 #flex0{
     flex-grow: 0;
     flex-shrink: 0;
+    margin-left: 20px;
 }
 /*Flex 1 al cerrar sesión para que aparezca más pequeño*/
 #flex1{
@@ -127,6 +130,19 @@ header ul a {
     color: #0ac215;
 }
 
+nav #btnMenu {
+    float: right;
+    margin-top: 35px;
+    margin-right: 30px;
+    display: none;
+    cursor: pointer;
+    height: 7vh;
+}
+
+#btnMenu img{
+    width: 40px;
+}
+
 .opciones:hover{
     background-color: #000000 ;
 }
@@ -140,7 +156,13 @@ header ul a {
 /*-------------Media Query Ajustes iPad-------------*/
 @media (max-width: 730px) {
 
+    nav #btnMenu {
+        display: block;
+    }
+
     .logo{
+        float: left;
+        margin-left: 20px;
         display: block;
     }
 
