@@ -1,18 +1,17 @@
-/* -----CSS DE LA GESTIÓN DEL ADMIN----- */
 /*TIPOGRAFIAS*/
 @font-face{
 	font-family:"Berlin Sans FB Demi Bold";
 	src:
-		url("../fuentes/berlin-sans-fb-demi-bold/Berlin_Sans_FB_Demi_Bold.ttf");
+		url("../../../diseno/fuentes/berlin-sans-fb-demi-bold/Berlin_Sans_FB_Demi_Bold.ttf");
 }
 
 @font-face{
 	font-family:"Bahnschrift Light SemiCondensed";
 	src:
-		url("../fuentes/Bahnschrift-Font-Family/BAHNSCHRIFT_1.ttf");
+		url("../../../diseno/fuentes/Bahnschrift-Font-Family/BAHNSCHRIFT_1.TTF");
 
 }
-/*ELEMENTOS GENERALES*/
+
 body{
     margin:0;
     padding:0;
@@ -50,6 +49,10 @@ td a:hover{
     color:#000000;
 }
 
+a{
+    text-decoration:none;
+}
+
 button{
     margin-top:10px;
     width: 100px;
@@ -66,10 +69,6 @@ button:hover{
     color:#0ac215;
 }
 
-
-
-/*-----MENU-----*/
-
 header {
     background-color: #000000;
     justify-content: space-between;
@@ -82,7 +81,6 @@ header {
     display: none;
 }
 
-/*-------Ajustes nav-----------*/
 nav input#check {
     display: none;
 }
@@ -93,19 +91,18 @@ header ul {
     margin: 0;
     padding: 0;
 }
-/*Flex 0 al logo porque no necesita más espacio*/
+
 #flex0{
     flex-grow: 0;
     flex-shrink: 0;
     margin-left: 20px;
 }
-/*Flex 1 al cerrar sesión para que aparezca más pequeño*/
+
 #flex1{
     flex-grow: 1;
     flex-shrink: 1;
 }
 
-/*Flex-grow y flex-shrink 2 para las opciones para darle más importancia*/
 nav li{
 	display: inline-block;
     flex-grow: 2;
@@ -146,14 +143,14 @@ nav #btnMenu {
 .opciones:hover{
     background-color: #000000 ;
 }
-/*-------------Media Query Ajustes-------------*/
+
+
 @media (max-width:800px){
     nav{
         font-size: 0.8em;
     }
 }
 
-/*-------------Media Query Ajustes iPad-------------*/
 @media (max-width: 730px) {
 
     nav #btnMenu {
@@ -169,7 +166,7 @@ nav #btnMenu {
     #flex0{
         display: none;
     }
-    /*NAV*/
+
     header .logo img {
         height: 95px;
     }
@@ -225,14 +222,64 @@ nav #btnMenu {
     #divWonderLeague{
         margin: 50px 0 !important;
     }
+
+    /*-----FORMULARIO-----*/
+
+    form{
+        border:1px solid black;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .divsFormularios{
+        font-family: "Bahnschrift Light SemiCondensed";
+        color: #000000;
+        font-size: 30px;
+        display: block;
+    }
+
+    #btnEnviar{
+        margin-bottom: 10px;
+    }
+
+    #imgEscudo{
+        width: 80px;
+        height: 80px;
+    }
+    
 }
+
+@media (max-width: 1250.4px) {
+
+    /*-----FORMULARIO-----*/
+
+    form{
+        border:1px solid black;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .divsFormularios{
+        font-family: "Bahnschrift Light SemiCondensed";
+        color: #000000;
+        font-size: 30px;
+        display: block;
+    }
+
+    #btnEnviar{
+        margin-bottom: 10px;
+    }
+
+    #imgEscudo{
+        width: 80px;
+        height: 80px;
+    }
+}
+
 /*---------Media Query Movil---------*/
 @media (max-width:540px){
     td,th{
         padding:5px;
-    }
-    form,input{
-        padding: 1px 0;
     }
     tr a{
         margin:0 5px;
@@ -245,7 +292,68 @@ nav #btnMenu {
         padding-top: 25px;
     }
 }
-/* -----REFLEXIONES----- */
+
+@media (min-width:1250.4px){
+    /*-----FORMULARIO-----*/
+
+    form{
+        border:1px solid black;
+        border-radius: 10px;
+        position: relative;
+        height: 500px;
+        margin: 30px;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .divsFormularios{
+        font-family: "Bahnschrift Light SemiCondensed";
+        color: #000000;
+        font-size: 30px;
+        display: block;
+        position: absolute;
+    }
+
+    #partidos{
+        top:15%;
+        left:30%;
+    }
+
+    #puntos{
+        top:15%;
+        left:70%;
+    }
+
+    #golesaf{
+        top:40%;
+        left:30%;
+    }
+
+    #golesec{
+        top:40%;
+        left:65%;
+    }
+
+    #goalaverage{
+        top:55%;
+        left:50%;
+    }
+
+    #btnEnviar{
+        position: absolute;
+        top:75%;
+        left:60%;
+    }
+
+    #imgEscudo{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 5%;
+        top: 15%;
+    }
+
+}
 
 #divWonderLeague {
     vertical-align: middle;
@@ -267,6 +375,7 @@ nav #btnMenu {
     margin-top: 50px;
     position: relative;
     bottom: 0;
+    font-family: "Berlin Sans FB Demi Bold";
 }
 
 #footer img {

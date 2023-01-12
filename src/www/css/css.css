@@ -3,13 +3,13 @@
 @font-face{
 	font-family:"Berlin Sans FB Demi Bold";
 	src:
-		url("../fuentes/berlin-sans-fb-demi-bold/Berlin_Sans_FB_Demi_Bold.ttf");
+		url("../../../diseno/fuentes/berlin-sans-fb-demi-bold/Berlin_Sans_FB_Demi_Bold.ttf");
 }
 
 @font-face{
 	font-family:"Bahnschrift Light SemiCondensed";
 	src:
-		url("../fuentes/Bahnschrift-Font-Family/BAHNSCHRIFT_1.ttf");
+		url("../../../diseno/fuentes/Bahnschrift-Font-Family/BAHNSCHRIFT_1.TTF");
 
 }
 /*ELEMENTOS GENERALES*/
@@ -143,6 +143,10 @@ nav #btnMenu {
     width: 40px;
 }
 
+a{
+    text-decoration:none;
+}
+
 .opciones:hover{
     background-color: #000000 ;
 }
@@ -245,7 +249,6 @@ nav #btnMenu {
         padding-top: 25px;
     }
 }
-/* -----REFLEXIONES----- */
 
 #divWonderLeague {
     vertical-align: middle;
@@ -267,6 +270,7 @@ nav #btnMenu {
     margin-top: 50px;
     position: relative;
     bottom: 0;
+    font-family: "Berlin Sans FB Demi Bold";
 }
 
 #footer img {
