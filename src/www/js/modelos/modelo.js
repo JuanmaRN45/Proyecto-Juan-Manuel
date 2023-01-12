@@ -9,6 +9,15 @@ export class Modelo{
 		this.callback = callback
 		this.callbacks = []	// Array de callbacks para implementar el observador
 		callback()
+
+		this.escudo
+		this.nombre
+		this.fechaCreacion
+		this.comunidad
+		this.descripcion
+		this.ascendido
+		this.ligasGanadas
+		this.colores=[]
 	}
 	
 	/**

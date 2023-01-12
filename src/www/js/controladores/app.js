@@ -6,6 +6,7 @@ import {VistaAlta} from '../vistas/vistaAlta.js'
 import {VistaEquipos} from '../vistas/vistaEquipos.js'
 import {VistaModTabla} from '../vistas/vistaModTabla.js'
 import {VistaModEquipo} from '../vistas/vistaModEquipo.js'
+import { VistaListado } from '../vistas/vistaListado.js'
 
 /**
  * Clase Controlador que administra las vistas
@@ -41,7 +42,6 @@ class Controlador {
         this.divEquipos = document.getElementById('equipos')
         this.vistaEquipos = new VistaEquipos(this.divEquipos, this)
 
-		//SETEO DE LAS DISTINTAS VISTAS DENTRO DE LA VISTA CATEGORIAS(LOS DISTINTOS DIVS QUE HAY)
 		this.divAlta=document.getElementById("alta");
 		this.vistaAlta=new VistaAlta(this.divAlta, this);
 
@@ -50,7 +50,10 @@ class Controlador {
 
 		this.divModEquipo = document.getElementById('modEquipo')
 		this.vistaModEquipo = new VistaModEquipo(this.divModEquipo, this)
-		this.pulsarNavLiga()		// Iniciar en vista listado
+
+		this.divListado = document.getElementById('listado')
+		this.vistaListado = new VistaListado(this.divListado, this)
+		this.pulsarNavLiga()
 	}
 
 	ocultarVistas(){
@@ -59,6 +62,7 @@ class Controlador {
 		this.vistaAlta.mostrar(false)
 		this.vistaModTabla.mostrar(false)
 		this.vistaModEquipo.mostrar(false)
+		this.vistaListado.mostrar(false)
 	}
 	/**
 	 * Atención a la pulsación sobre el enlace de categorías
@@ -89,6 +93,11 @@ class Controlador {
 	pulsarAlta() {
 		this.ocultarVistas()
 		this.vistaAlta.mostrar(true)
+	}
+
+	pulsarListado() {
+		this.ocultarVistas()
+		this.vistaListado.mostrar(true)
 	}
 
 	getModelo() {

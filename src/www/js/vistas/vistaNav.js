@@ -14,40 +14,49 @@ export class VistaNav{
 		
 		this.btnLiga = this.nav.getElementsByTagName('button')[0]
 		this.btnEquipos = this.nav.getElementsByTagName('button')[1]
-		this.btnAnadir = this.nav.getElementsByTagName('button')[2]
-		this.btnModTabla = this.nav.getElementsByTagName('button')[3]
+		this.btnBusqueda = this.nav.getElementsByTagName('button')[2]
+		this.btnAnadir = this.nav.getElementsByTagName('button')[3]
+		this.btnModTabla = this.nav.getElementsByTagName('button')[4]
 		this.btnLiga.onclick = this.pulsarLiga.bind(this)
 		this.btnEquipos.onclick = this.pulsarEquipos.bind(this)
+		this.btnBusqueda.onclick = this.pulsarNavListado.bind(this)
 		this.btnAnadir.onclick = this.pulsarAnadir.bind(this)
 		this.btnModTabla.onclick = this.pulsarNavModTabla.bind(this)
 
-		this.btnLiga2 = this.nav.getElementsByTagName('button')[4]
-		this.btnEquipos2 = this.nav.getElementsByTagName('button')[5]
-		this.btnModEquipo = this.nav.getElementsByTagName('button')[6]
+		this.btnLiga2 = this.nav.getElementsByTagName('button')[5]
+		this.btnEquipos2 = this.nav.getElementsByTagName('button')[6]
+		this.btnModEquipo = this.nav.getElementsByTagName('button')[7]
 		this.btnLiga2.onclick = this.pulsarLiga.bind(this)
 		this.btnEquipos2.onclick = this.pulsarEquipos.bind(this)
 		this.btnModEquipo.onclick = this.pulsarNavModEquipos.bind(this)
 
-		this.btnLiga3 = this.nav.getElementsByTagName('button')[7]
-		this.btnEquipos3 = this.nav.getElementsByTagName('button')[8]
-		this.btnEnviar2 = this.nav.getElementsByTagName('button')[9]
+		this.btnLiga3 = this.nav.getElementsByTagName('button')[8]
+		this.btnEquipos3 = this.nav.getElementsByTagName('button')[9]
+		this.btnEnviar2 = this.nav.getElementsByTagName('button')[10]
 		this.btnLiga3.onclick = this.pulsarLiga.bind(this)
 		this.btnEquipos3.onclick = this.pulsarEquipos.bind(this)
 		this.btnEnviar2.onclick = this.pulsarLiga.bind(this)
 
-		this.btnLiga4 = this.nav.getElementsByTagName('button')[10]
-		this.btnEquipos4 = this.nav.getElementsByTagName('button')[11]
-		this.btnEnviar3 = this.nav.getElementsByTagName('button')[12]
+		this.btnLiga4 = this.nav.getElementsByTagName('button')[11]
+		this.btnEquipos4 = this.nav.getElementsByTagName('button')[12]
+		this.btnEnviar3 = this.nav.getElementsByTagName('button')[13]
 		this.btnLiga4.onclick = this.pulsarLiga.bind(this)
 		this.btnEquipos4.onclick = this.pulsarEquipos.bind(this)
 		this.btnEnviar3.onclick = this.pulsarLiga.bind(this)
 
-		this.btnLiga5 = this.nav.getElementsByTagName('button')[13]
-		this.btnEquipos5 = this.nav.getElementsByTagName('button')[14]
-		this.btnEnviar4 = this.nav.getElementsByTagName('button')[15]
+		this.btnLiga5 = this.nav.getElementsByTagName('button')[14]
+		this.btnEquipos5 = this.nav.getElementsByTagName('button')[15]
+		this.btnEnviar4 = this.nav.getElementsByTagName('button')[16]
 		this.btnLiga5.onclick = this.pulsarLiga.bind(this)
 		this.btnEquipos5.onclick = this.pulsarEquipos.bind(this)
 		this.btnEnviar4.onclick = this.pulsarEquipos.bind(this)
+
+		this.btnLiga6 = this.nav.getElementsByTagName('button')[17]
+		this.btnEquipos6 = this.nav.getElementsByTagName('button')[18]
+		this.btnModEquipo2 = this.nav.getElementsByTagName('button')[19]
+		this.btnLiga6.onclick = this.pulsarLiga.bind(this)
+		this.btnEquipos6.onclick = this.pulsarEquipos.bind(this)
+		this.btnModEquipo2.onclick = this.pulsarNavModEquipos.bind(this)
 		
 		
 	}
@@ -72,5 +81,9 @@ export class VistaNav{
 
 	pulsarNavModEquipos() {
 		this.controlador.pulsarModEquipo()
+	}
+
+	pulsarNavListado() {
+		this.controlador.pulsarListado()
 	}
 }
