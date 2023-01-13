@@ -225,7 +225,7 @@ nav #btnMenu {
 
     /*-----FORMULARIO-----*/
 
-    #contenedor{
+    .contenedor{
         border:1px solid black;
         border-radius: 10px;
         margin: 5px;
@@ -238,12 +238,12 @@ nav #btnMenu {
         display: block;
     }
 
-    #imgEscudo{
+    .imgEscudo{
         width: 80px;
         height: 80px;
     }
 
-    #btnEditar{
+    .btnEditar{
         margin-bottom: 10px;
     }
 
@@ -258,7 +258,7 @@ nav #btnMenu {
 
     /*-----FORMULARIO-----*/
 
-    #contenedor{
+    .contenedor{
         border:1px solid black;
         border-radius: 10px;
         margin: 5px;
@@ -271,12 +271,12 @@ nav #btnMenu {
         display: block;
     }
 
-    #imgEscudo{
+    .imgEscudo{
         width: 80px;
         height: 80px;
     }
 
-    #btnEditar{
+    .btnEditar{
         margin-bottom: 10px;
     }
 
@@ -310,7 +310,7 @@ nav #btnMenu {
 @media (min-width:1250.4px){
     /*-----FORMULARIO-----*/
 
-    #contenedor{
+    .contenedor{
         border:1px solid black;
         border-radius: 10px;
         position: relative;
@@ -328,37 +328,37 @@ nav #btnMenu {
         position: absolute;
     }
 
-    #partidos{
+    div.divsFormularios.partidos{
         top:15%;
         left:30%;
     }
 
-    #puntos{
+    div.divsFormularios.puntos{
         top:15%;
         left:60%;
     }
 
-    #descripcion{
+    .descripcion{
         font-size: 25px;
         margin-right: 10px;
     }
 
-    #btnEditar{
+    div.divsFormularios.btnEditar{
         top:80%;
         left:10%;
     }
 
-    #golesaf{
+    div.divsFormularios.golesaf{
         top:35%;
         left:30%;
     }
 
-    #golesec{
+    div.divsFormularios.golesec{
         top:65%;
         left:5%;
     }
 
-    #goalaverage{
+    div.divsFormularios.goalaverage{
         top:78%;
         left:54%;
     }
@@ -368,7 +368,7 @@ nav #btnMenu {
         display: block;
     }
 
-    #imgEscudo{
+    .imgEscudo{
         width: 200px;
         height: 200px;
         position: absolute;

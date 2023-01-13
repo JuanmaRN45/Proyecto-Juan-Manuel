@@ -236,6 +236,7 @@ nav #btnMenu {
         color: #000000;
         font-size: 30px;
         display: block;
+        border: 0;
     }
 
     #btnEnviar{
@@ -264,6 +265,7 @@ nav #btnMenu {
         color: #000000;
         font-size: 30px;
         display: block;
+        border: 0;
     }
 
     #btnEnviar{
@@ -312,6 +314,7 @@ nav #btnMenu {
         font-size: 30px;
         display: block;
         position: absolute;
+        border: 0;
     }
 
     #partidos{

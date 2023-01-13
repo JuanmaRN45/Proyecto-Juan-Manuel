@@ -242,6 +242,7 @@ nav #btnMenu {
         color: #000000;
         font-size: 30px;
         display: block;
+        border:0;
     }
 
     #btnEnviar{
@@ -249,13 +250,6 @@ nav #btnMenu {
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-
-    #imgEscudo{
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin: auto;
     }
 
     #inputfile{
@@ -285,6 +279,7 @@ nav #btnMenu {
         color: #000000;
         font-size: 30px;
         display: block;
+        border:0;
     }
 
     #btnEnviar{
@@ -292,13 +287,6 @@ nav #btnMenu {
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-
-    #imgEscudo{
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin: auto;
     }
 
     #inputfile{
@@ -347,10 +335,11 @@ nav #btnMenu {
         color: #000000;
         font-size: 30px;
         position: absolute;
+        border:0;
     }
 
     #escudo{
-        top: 100px;
+        top: 20px;
         left: 10%;
     }
 
@@ -365,7 +354,7 @@ nav #btnMenu {
     }
 
     #fecha{
-        top: 165px;
+        top: 105px;
         left: 10%;
     }
 
@@ -385,7 +374,7 @@ nav #btnMenu {
     }
 
     #titulos{
-        top: 280px;
+        top: 210px;
         left: 10%;
     }
 
@@ -393,14 +382,6 @@ nav #btnMenu {
         position: absolute;
         top: 370px;
         left: 47%;
-    }
-
-    #imgEscudo{
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        left: 35%;
-        top:-250%;
     }
 
     #inputfile{
