@@ -24,7 +24,6 @@ class Controlador {
 	 * Método iniciar que es el primero en ejecutarse cuando se carga la pantalla
 	 */
 	iniciar() {
-		console.log('¡WONDER LEAGUE!')
 		this.modelo=new Modelo(this, this.iniciarVistas.bind(this))
 	}
 
@@ -32,7 +31,6 @@ class Controlador {
 	 * Método iniciarVistar que se ejecuta al iniciar el modelo
 	 */
 	iniciarVistas() {
-		console.log('hola')
 		this.nav = document.getElementsByTagName('nav')[0]
 		this.vistaNav = new VistaNav(this.nav, this)
 
@@ -64,17 +62,11 @@ class Controlador {
 		this.vistaModEquipo.mostrar(false)
 		this.vistaListado.mostrar(false)
 	}
-	/**
-	 * Atención a la pulsación sobre el enlace de categorías
-	 */
 	pulsarNavLiga() {
 		this.ocultarVistas()
 		this.vistaLiga.mostrar(true)
 	}
 
-	/**
-	 * Atención a la pulsación del enlade de reflexiones
-	 */
 	pulsarNavEquipos() {
 		this.ocultarVistas()
 		this.vistaEquipos.mostrar(true)

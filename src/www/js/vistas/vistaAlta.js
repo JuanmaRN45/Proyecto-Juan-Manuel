@@ -4,7 +4,7 @@ import {Vista} from './vista.js'
 export class VistaAlta extends Vista {
 
 	/**
-     * Contructor de la clase VistaCategorias
+     * Contructor de la clase VistaAlta
      * @param {HTMLDivElement} div Div de la vista
      * @param {Object} controlador Controlador de la vista
      */
