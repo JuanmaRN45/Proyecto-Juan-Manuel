@@ -29,16 +29,16 @@ export class Modelo{
 	}
 }
 
-class Equipos{
+export class Equipos{
 
 	constructor(){
-		this.escudo
-		this.nombre
-		this.fechaCreacion
-		this.comunidad
-		this.descripcion
-		this.ascendido
-		this.ligasGanadas
+		this.escudo = escudo
+		this.nombre = nombre
+		this.fechaCreacion = fechaCreacion
+		this.comunidad = comunidad
+		this.descripcion = descripcion
+		this.ascendido = ascendido
+		this.ligasGanadas = ligasGanadas
 		this.colores=[]
 	}	
 }
