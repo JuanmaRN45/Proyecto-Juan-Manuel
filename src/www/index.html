@@ -6,49 +6,405 @@
 		<title>Wonder League</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1"/>
 		<link rel="stylesheet" type="text/css" href="../www/css/estilo.css">
+        <link rel="shortcut icon" href="./assets/logo-proyecto-nombre.png"/>
 	</head>
     <body>
-        <div>
+         <!-- CABECERA -->
+        <header>
+            <div class="logo">
+                <img src="./assets/logo-proyecto.png" alt="Logo Wonder League"/>
+            </div>
             <nav>
-                <div id="liga">
-                    Vista liga
-                    <button>Liga</button>
-                    <button>Equipos</button>
-                    <button>Búsqueda</button>
-                    <button>Añadir Equipo</button>
-                    <button>Modificar datos tabla</button>
-                </div>
-                <div id="equipos">
-                    Vista equipos
-                    <button>Liga</button>
-                    <button>Equipos</button>
-                    <button>Modificar Equipo</button>
-                </div>
-                <div id="alta">
-                    Vista alta
-                    <button>Liga</button>
-                    <button>Equipos</button>
-                    <button>enviar</button>
-                </div>
-                <div id="modTabla">
-                    Vista modTabla
-                    <button>Liga</button>
-                    <button>Equipos</button>
-                    <button>Enviar</button>
-                </div>
-                <div id="modEquipo">
-                    vista modEquipo
-                    <button>Liga</button>
-                    <button>Equipos</button>
-                    <button>Enviar</button>
-                </div>
-                <div id="listado">
-                    Vista listado
-                    <button>Liga</button>
-                    <button>Equipos</button>
-                    <button>Modificar Equipo</button>
-                </div>
+                <input type="checkbox" id="check" />
+                <label for="check" id="btnMenu">
+                    <img src="./src/www/assets/menu.png" alt="Icono de menú"/>
+                </label>
+                <ul>
+                    <li id="flex0"><img src="./src/www/assets/logo-proyecto.png" alt="Logo Wonder League"/></li>
+                    <li><a href="../Mockup_principal/Mockup_principal.html" class="opciones" id="liLiga">Liga</a></li>
+                    <li><a href="../Mockup_equipos/Mockup_equipos.html" class="opciones" id="liEquipos">Equipos</a></li>
+                    <li class="opciones" ><a id="busqueda" href="../Mockup_listado/Mockup_listado.html"><label for="busquedaaa"><button>🔎</button></label></a><input  id="busquedaaa"type="text" placeholder="Búsqueda"></li>
+                </ul>
             </nav>
+        </header>
+        <div class="liga">
+            <div id="divWonderLeague">
+                <h1>WONDER LEAGUE</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Escudo</th>
+                        <th>Nombre</th>
+                        <th>Partidos Jugados</th>
+                        <th>Puntos</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>GA</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="./realmadrid.png" alt="Escudo Real Madrid"width="40px"height="40px" ></td>
+                        <td>Real Madrid</td>
+                        <td>15</td>
+                        <td>45</td>
+                        <td>40</td>
+                        <td>23</td>
+                        <td>+17</td>
+                        <td>🗑️<a href="../Mockup_modificaciontabla/Mockup_modificaciontabla.html">✏️</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="./assets/barsa.png" alt="Escudo  barsa"width="40px"height="40px" ></td>
+                        <td>FC Barcelona</td>
+                        <td>15</td>
+                        <td>42</td>
+                        <td>40</td>
+                        <td>33</td>
+                        <td>+7</td>
+                        <td>🗑️<a href="../Mockup_modificaciontabla/Mockup_modificaciontabla.html">✏️</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="./assets/atleti.png" alt="Escudo atleti"width="40px"height="40px" ></td>
+                        <td>Atlético de Madrid</td>
+                        <td>15</td>
+                        <td>36</td>
+                        <td>33</td>
+                        <td>27</td>
+                        <td>+6</td>
+                        <td>🗑️<a href="../Mockup_modificaciontabla/Mockup_modificaciontabla.html">✏️</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="./assets/betis.png" alt="Escudo betis"width="40px"height="40px" ></td>
+                        <td>Betis</td>
+                        <td>15</td>
+                        <td>36</td>
+                        <td>40</td>
+                        <td>31</td>
+                        <td>+9</td>
+                        <td>🗑️<a href="../Mockup_modificaciontabla/Mockup_modificaciontabla.html">✏️</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="./assets/realsociedad.png" alt="Escudo Real sociedad"width="40px"height="40px" ></td>
+                        <td>Real Sociedad</td>
+                        <td>15</td>
+                        <td>30</td>
+                        <td>26</td>
+                        <td>20</td>
+                        <td>+6</td>
+                        <td>🗑️<a href="../Mockup_modificaciontabla/Mockup_modificaciontabla.html">✏️</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="../Mockup_alta/Mockup_alta.html"><button>Añadir Equipo</button></a>
+        </div>
+        <div class="equipos">
+            <div id="divWonderLeague">
+                <h1> EQUIPOS </h1>
+                <div class="contenedor">
+                    <img  src="./assets/realmadrid.png" class="imgEscudo" alt="Escudo Real madrid">
+                    <div class="divsFormularios partidos">
+                        <label>Nombre:&nbsp;</label>
+                        <p>Real Madrid C.F</p>
+                    </div>
+                    <div class="divsFormularios puntos">
+                        <label>Descripción:&nbsp;</label>
+                        <p class="descripcion">El Real Madrid Club de Fútbol, más conocido simplemente como Real Madrid, es una entidad polideportiva con sede en Madrid, España. Fue declarada oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902 con el objeto de la práctica y desarrollo de este deporte —si bien sus orígenes datan del año 1900.</p>
+                    </div>
+                    <div class="divsFormularios goalaverage" >
+                        <label>Fecha de Fundación:&nbsp;</label>
+                        <p>6 de marzo de 1902</p>
+                    </div>
+                    <div class="divsFormularios golesaf">
+                        <label>Comunidad Autónoma:&nbsp;</label>
+                        <p class="titulos">Comunidad de Madrid</p>
+                    </div>
+                    <div class="divsFormularios golesec">
+                        <label>Reacién Ascendido:&nbsp;</label>
+                        <p>No</p>
+                    </div>
+                    <div class="divsFormularios btnEditar">
+                        <a href="../Mockup_modificacion/Mockup_modificacion.html"><button>Editar</button></a>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <img  src="./assets/barsa.png" class="imgEscudo" alt="Escudo FC Barcelona">
+                    <div class="divsFormularios partidos">
+                        <label>Nombre:&nbsp;</label>
+                        <p>Real Madrid C.F</p>
+                    </div>
+                    <div class="divsFormularios puntos">
+                        <label>Descripción:&nbsp;</label>
+                        <p class="descripcion">El Real Madrid Club de Fútbol, más conocido simplemente como Real Madrid, es una entidad polideportiva con sede en Madrid, España. Fue declarada oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902 con el objeto de la práctica y desarrollo de este deporte —si bien sus orígenes datan del año 1900.</p>
+                    </div>
+                    <div class="divsFormularios goalaverage" >
+                        <label>Fecha de Fundación:&nbsp;</label>
+                        <p>6 de marzo de 1902</p>
+                    </div>
+                    <div class="divsFormularios golesaf">
+                        <label>Comunidad Autónoma:&nbsp;</label>
+                        <p class="titulos">Comunidad de Madrid</p>
+                    </div>
+                    <div class="divsFormularios golesec">
+                        <label>Reacién Ascendido:&nbsp;</label>
+                        <p>No</p>
+                    </div>
+                    <div class="divsFormularios btnEditar">
+                        <a href="../Mockup_modificacion/Mockup_modificacion.html"><button>Editar</button></a>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <img  src="./assets/atleti.png" class="imgEscudo" alt="Escudo Atletico Madrid">
+                    <div class="divsFormularios partidos">
+                        <label>Nombre:&nbsp;</label>
+                        <p>Real Madrid C.F</p>
+                    </div>
+                    <div class="divsFormularios puntos">
+                        <label>Descripción:&nbsp;</label>
+                        <p class="descripcion">El Real Madrid Club de Fútbol, más conocido simplemente como Real Madrid, es una entidad polideportiva con sede en Madrid, España. Fue declarada oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902 con el objeto de la práctica y desarrollo de este deporte —si bien sus orígenes datan del año 1900.</p>
+                    </div>
+                    <div class="divsFormularios goalaverage" >
+                        <label>Fecha de Fundación:&nbsp;</label>
+                        <p>6 de marzo de 1902</p>
+                    </div>
+                    <div class="divsFormularios golesaf">
+                        <label>Comunidad Autónoma:&nbsp;</label>
+                        <p class="titulos">Comunidad de Madrid</p>
+                    </div>
+                    <div class="divsFormularios golesec">
+                        <label>Reacién Ascendido:&nbsp;</label>
+                        <p>No</p>
+                    </div>
+                    <div class="divsFormularios btnEditar">
+                        <a href="../Mockup_modificacion/Mockup_modificacion.html"><button>Editar</button></a>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <img  src="./assets/betis.png" class="imgEscudo" alt="Escudo betis">
+                    <div class="divsFormularios partidos">
+                        <label>Nombre:&nbsp;</label>
+                        <p>Real Madrid C.F</p>
+                    </div>
+                    <div class="divsFormularios puntos">
+                        <label>Descripción:&nbsp;</label>
+                        <p class="descripcion">El Real Madrid Club de Fútbol, más conocido simplemente como Real Madrid, es una entidad polideportiva con sede en Madrid, España. Fue declarada oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902 con el objeto de la práctica y desarrollo de este deporte —si bien sus orígenes datan del año 1900.</p>
+                    </div>
+                    <div class="divsFormularios goalaverage" >
+                        <label>Fecha de Fundación:&nbsp;</label>
+                        <p>6 de marzo de 1902</p>
+                    </div>
+                    <div class="divsFormularios golesaf">
+                        <label>Comunidad Autónoma:&nbsp;</label>
+                        <p class="titulos">Comunidad de Madrid</p>
+                    </div>
+                    <div class="divsFormularios golesec">
+                        <label>Reacién Ascendido:&nbsp;</label>
+                        <p>No</p>
+                    </div>
+                    <div class="divsFormularios btnEditar">
+                        <a href="../Mockup_modificacion/Mockup_modificacion.html"><button>Editar</button></a>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <img  src="./assets/realsociedad.png" class="imgEscudo" alt="Escudo Real sociedad">
+                    <div class="divsFormularios partidos">
+                        <label>Nombre:&nbsp;</label>
+                        <p>Real Madrid C.F</p>
+                    </div>
+                    <div class="divsFormularios puntos">
+                        <label>Descripción:&nbsp;</label>
+                        <p class="descripcion">El Real Madrid Club de Fútbol, más conocido simplemente como Real Madrid, es una entidad polideportiva con sede en Madrid, España. Fue declarada oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902 con el objeto de la práctica y desarrollo de este deporte —si bien sus orígenes datan del año 1900.</p>
+                    </div>
+                    <div class="divsFormularios goalaverage" >
+                        <label>Fecha de Fundación:&nbsp;</label>
+                        <p>6 de marzo de 1902</p>
+                    </div>
+                    <div class="divsFormularios golesaf">
+                        <label>Comunidad Autónoma:&nbsp;</label>
+                        <p class="titulos">Comunidad de Madrid</p>
+                    </div>
+                    <div class="divsFormularios golesec">
+                        <label>Reacién Ascendido:&nbsp;</label>
+                        <p>No</p>
+                    </div>
+                    <div class="divsFormularios btnEditar">
+                        <a href="../Mockup_modificacion/Mockup_modificacion.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alta">
+            <div id="divWonderLeague">
+                <h1>AÑADIR NUEVO EQUIPO</h1>
+                <form>
+                    <fieldset class="divsFormularios" id="escudo">
+                        <label for="inputfile">Escudo:&nbsp;</label>
+                        <input id="inputfile" type="file">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="nombre">
+                        <label for="nombreee">Nombre:&nbsp;</label>
+                        <input id="nombreee" type="text">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="descripcion">
+                        <label for="descripciooon">Descripción:</label><br>
+                        <textarea id="descripciooon"></textarea>
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="fecha">
+                        <label for="fechaaa">Fecha de Creación:&nbsp;</label><br>
+                        <input id="fechaaa"type="date">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="ligas">
+                        <label for="numLigas">Nº de ligas ganadas:&nbsp;</label>
+                        <input id="numLigas"type="number">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="colores">
+                        <label for="coloreees">Colores del Equipo:</label><br>
+                        <input id="coloreees1"type="checkbox"><label for="coloreees1">Blanco</label><br>
+                        <input id="coloreees2"type="checkbox"><label for="coloreees2">Negro</label><br>
+                        <input id="coloreees3"type="checkbox"><label for="coloreees3">Rojo</label><br>
+                        <input id="coloreees4"type="checkbox"><label for="coloreees4">Azul</label><br>
+                        <input id="coloreees5"type="checkbox"><label for="coloreees5">Verde</label><br>
+                        <input id="coloreees6"type="checkbox"><label for="coloreees6">Amarillo</label>
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="ascenso">
+                        <label for="ascendido">Recien ascendido:</label><br>
+                        <input id="ascendido1"  type="radio" name="ascendido"><label for="ascendido1">Sí</label><br>
+                        <input id="ascendido2" type="radio" name="ascendido"><label for="ascendido2">No</label>
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="titulos">
+                        <label for="comunidad">Comunidad Autónoma</label><br>
+                        <select id="comunidad">
+                            <option>Comunidad de Madrid</option>
+                            <option>Cataluña</option>
+                            <option>Andalucía</option>
+                            <option>País Vasco</option>
+                        </select>
+                    </fieldset>
+                    <a href="../Mockup_principal/Mockup_principal.html"><button id="btnEnviar">Enviar</button></a>
+                </form>
+            </div>
+        </div>
+        <div class="modTabla">
+            <div id="divWonderLeague">
+                <h1>MODIFICACIÓN REAL MADRID</h1>
+                <form>
+                    <img  src="./assets/realmadrid.png" id="imgEscudo" alt="Escudo Real Madrid">
+                    <fieldset class="divsFormularios" id="partidos">
+                        <label for="partidosjug">Partidos Jugados:&nbsp;</label>
+                        <input id="partidosjug"type="number">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="puntos">
+                        <label for="puntoos">Puntos:&nbsp;</label>
+                        <input id="puntoos"type="number">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="golesaf">
+                        <label for="golees">Goles a Favor:&nbsp;</label>
+                        <input id="golees"type="number">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="golesec">
+                        <label for="golees2">Goles en contra:&nbsp;</label>
+                        <input id="golees2"type="number">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="goalaverage">
+                        <label for="golees3">Goal Average:&nbsp;</label>
+                        <input id="golees3"type="number">
+                    </fieldset>
+                    <a href="../Mockup_principal/Mockup_principal.html"><button id="btnEnviar">Enviar</button></a>
+                </form>
+            </div>
+        </div>
+        <div class="modEquipo">
+            <div id="divWonderLeague">
+                <h1>MODIFICACIÓN REAL MADRID</h1>
+                <form>
+                    <fieldset class="divsFormularios" id="escudo">
+                        <label for="inputfile">Escudo:&nbsp;</label>
+                        <input id="inputfile" type="file">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="nombre">
+                        <label for="nombreee">Nombre:&nbsp;</label>
+                        <input id="nombreee" type="text">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="descripcion">
+                        <label for="descripciooon">Descripción:</label><br>
+                        <textarea id="descripciooon"></textarea>
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="fecha">
+                        <label for="fechaaa">Fecha de Creación:&nbsp;</label><br>
+                        <input id="fechaaa"type="date">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="ligas">
+                        <label for="numLigas">Nº de ligas ganadas:&nbsp;</label>
+                        <input id="numLigas"type="number">
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="colores">
+                        <label for="coloreees">Colores del Equipo:</label><br>
+                        <input id="coloreees1"type="checkbox"><label for="coloreees1">Blanco</label><br>
+                        <input id="coloreees2"type="checkbox"><label for="coloreees2">Negro</label><br>
+                        <input id="coloreees3"type="checkbox"><label for="coloreees3">Rojo</label><br>
+                        <input id="coloreees4"type="checkbox"><label for="coloreees4">Azul</label><br>
+                        <input id="coloreees5"type="checkbox"><label for="coloreees5">Verde</label><br>
+                        <input id="coloreees6"type="checkbox"><label for="coloreees6">Amarillo</label>
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="ascenso">
+                        <label for="ascendido">Recien ascendido:</label><br>
+                        <input id="ascendido1"  type="radio" name="ascendido"><label for="ascendido1">Sí</label><br>
+                        <input id="ascendido2" type="radio" name="ascendido"><label for="ascendido2">No</label>
+                    </fieldset>
+                    <fieldset class="divsFormularios" id="titulos">
+                        <label for="comunidad">Comunidad Autónoma</label><br>
+                        <select id="comunidad">
+                            <option>Comunidad de Madrid</option>
+                            <option>Cataluña</option>
+                            <option>Andalucía</option>
+                            <option>País Vasco</option>
+                        </select>
+                    </fieldset>
+                    <a href="../Mockup_principal/Mockup_principal.html"><button id="btnEnviar">Enviar</button></a>
+                </form>
+            </div>
+        </div>
+        <div class="listado">
+            <div id="divWonderLeague">
+                <h1> Resultado de la Búsqueda </h1>
+                <div class="contenedor">
+                    <img  src="./assets/realmadrid.png" class="imgEscudo" alt="Escudo Real madrid">
+                    <div class="divsFormularios partidos">
+                        <label>Nombre:&nbsp;</label>
+                        <p>Real Madrid C.F</p> 
+                    </div>
+                    <div class="divsFormularios puntos">
+                        <label>Descripción:&nbsp;</label>
+                        <p class="descripcion">El Real Madrid Club de Fútbol, más conocido simplemente como Real Madrid, es una entidad polideportiva con sede en Madrid, España. Fue declarada oficialmente registrada como club de fútbol por sus socios el 6 de marzo de 1902 con el objeto de la práctica y desarrollo de este deporte —si bien sus orígenes datan del año 1900.</p>
+                    </div>
+                    <div class="divsFormularios goalaverage" >
+                        <label>Fecha de Fundación:&nbsp;</label>
+                        <p>6 de marzo de 1902</p>
+                    </div>
+                    <div class="divsFormularios golesaf">
+                        <label>Comunidad Autónoma:&nbsp;</label><br>
+                        <p class="titulos">Comunidad de Madrid</p>
+                    </div>
+                    <div class="divsFormularios golesec">
+                        <label>Reacién Ascendido:&nbsp;</label>
+                        <p>No</p>
+                    </div>
+                    <div class="divsFormularios btnEditar">
+                        <a href="../Mockup_modificacion/Mockup_modificacion.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>WONDER LEAGUE</p><br>
+            <img src="./assets/wcag2AA.png" alt="Logo WCAG 2.0 AA"/>
         </div>
         <script type="module" src="./js/controladores/app.js"></script>
     </body>
