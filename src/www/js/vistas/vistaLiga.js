@@ -11,5 +11,13 @@ export class VistaLiga extends Vista {
 	constructor(div, controlador) {
 		super(div)
           this.controlador = controlador
+
+          /*Botones pantalla liga*/
+		this.btnAnadir = document.getElementById('anaaaaadir')
+		this.btnAnadir.onclick = this.pulsarAnadir.bind(this)
 	}
+
+     pulsarAnadir(){
+          this.controlador.pulsarAlta()
+     }
 }

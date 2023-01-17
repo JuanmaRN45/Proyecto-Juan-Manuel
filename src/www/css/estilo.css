@@ -630,7 +630,7 @@ p{
         border:0;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         display: block;
         margin: auto;
         margin-top: 10px;
@@ -667,7 +667,7 @@ p{
         border:0;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         display: block;
         margin: auto;
         margin-top: 10px;
@@ -763,7 +763,7 @@ p{
         left: 10%;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         position: absolute;
         top: 370px;
         left: 47%;
@@ -874,7 +874,7 @@ p{
         border: 0;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         margin-bottom: 10px;
     }
 
@@ -903,7 +903,7 @@ p{
         border: 0;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         margin-bottom: 10px;
     }
 
@@ -977,7 +977,7 @@ p{
         left:50%;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         position: absolute;
         top:75%;
         left:60%;
@@ -1099,7 +1099,7 @@ p{
         border:0;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         display: block;
         margin: auto;
         margin-top: 10px;
@@ -1136,7 +1136,7 @@ p{
         border:0;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         display: block;
         margin: auto;
         margin-top: 10px;
@@ -1232,7 +1232,7 @@ p{
         left: 10%;
     }
 
-    #btnEnviar{
+    .btnEnviar{
         position: absolute;
         top: 370px;
         left: 47%;
