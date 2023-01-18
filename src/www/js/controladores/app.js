@@ -1,5 +1,7 @@
 "use strict" //activo modo estricto
 import {Modelo} from '../modelos/modelo.js'
+import {Equipos} from '../modelos/equipos.js'
+import {idb} from '../modelos/idb.js'
 import {VistaNav} from '../vistas/vistaNav.js'
 import {VistaLiga} from '../vistas/vistaLiga.js'
 import {VistaAlta} from '../vistas/vistaAlta.js'
@@ -90,6 +92,13 @@ class Controlador {
 	pulsarListado() {
 		this.ocultarVistas()
 		this.vistaListado.mostrar(true)
+	}
+
+	insertar(objeto){
+		this.modelo.insertar(objeto, this.insertarOK.bind(this))
+	}
+	insertarOK(){
+		console.log('La inserción ha ido bien')
 	}
 
 	getModelo() {

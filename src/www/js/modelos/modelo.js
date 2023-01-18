@@ -2,6 +2,8 @@
 /**
  * Clase Modelo que gestiona los datos de la web
  * */ 
+import {idb} from '../modelos/idb.js'
+
 export class Modelo{
 
 	constructor(controlador, callback) {
@@ -9,6 +11,7 @@ export class Modelo{
 		this.callback = callback
 		this.callbacks = []	// Array de callbacks para implementar el observador
 		callback()
+		this.idb = new idb()
 	}
 	
 	/**
@@ -27,18 +30,9 @@ export class Modelo{
 			callback()
 		}
 	}
+
+	insertar(objeto,callback){
+		this.idb.insertar(objeto,callback)
+	}
 }
 
-export class Equipos{
-
-	constructor(){
-		this.escudo = escudo
-		this.nombre = nombre
-		this.fechaCreacion = fechaCreacion
-		this.comunidad = comunidad
-		this.descripcion = descripcion
-		this.ascendido = ascendido
-		this.ligasGanadas = ligasGanadas
-		this.colores=[]
-	}	
-}

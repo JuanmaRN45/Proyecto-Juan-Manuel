@@ -19,9 +19,11 @@ export class VistaNav{
 		this.nav = nav
 
 		/*Botones nav*/
+		this.btnLogo = this.nav.getElementsByTagName('li')[0]
 		this.btnLiga = this.nav.getElementsByTagName('li')[1]
 		this.btnEquipos = this.nav.getElementsByTagName('li')[2]
 		this.btnBusqueda = this.nav.getElementsByTagName('li')[3]
+		this.btnLogo.onclick = this.pulsarLiga.bind(this)
 		this.btnLiga.onclick = this.pulsarLiga.bind(this)
 		this.btnEquipos.onclick = this.pulsarEquipos.bind(this)
 		this.btnBusqueda.onclick = this.pulsarNavListado.bind(this)
