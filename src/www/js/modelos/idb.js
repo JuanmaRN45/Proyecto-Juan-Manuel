@@ -1,7 +1,8 @@
 "use strict" //activo modo estricto
 
 export class idb{
-	constructor() {
+	constructor(controlador) {
+        this.controlador=controlador
 		const peticion = indexedDB.open('WonderLeague', 2)
         peticion.onerror = evento => {throw 'Error al conectar indexedDB'}
         peticion.onupgradeneeded = evento => {
@@ -19,5 +20,6 @@ export class idb{
         const tabla = transaccion.objectStore('Equipos')
         const peticion = tabla.add(objeto)
         peticion.onsuccess = callback
+        this.controlador.pulsarNavLiga()
     }
 }

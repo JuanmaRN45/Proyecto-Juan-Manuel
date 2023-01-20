@@ -99,7 +99,7 @@ class Controlador {
 	}
 	insertarOK(){
 		console.log('La inserción ha ido bien')
-	}
+	}		
 
 	getModelo() {
 		return this.modelo

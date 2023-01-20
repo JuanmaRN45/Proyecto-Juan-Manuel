@@ -13,25 +13,24 @@ export class VistaAlta extends Vista {
 		super(div)
           this.controlador = controlador
           
+          this.div = document.getElementById('alta')
+          this.escudo =  document.getElementById('inputfile')
+          this.valorescudo = null
+          this.escudo.addEventListener('change', e => {
+
+               const archivo = this.escudo.files[0]
+               const lector = new FileReader()
+               lector.addEventListener('load',() => {
+                    this.valorescudo = lector.result
+               })
+               lector.readAsDataURL(archivo)
+          })
           /*Botones pantalla liga*/
 		this.btnEnviar = this.div.getElementsByTagName('button')[0]
 		this.btnEnviar.onclick = this.insertarIndex.bind(this)
 	}
 
      insertarIndex(){
-          this.div = document.getElementById('alta')
-          this.escudo =  this.div.getElementsByTagName('input')[0]
-          let valorescudo = null
-
-          escudo.addEventListener('change', e =>{
-
-               const archivo = this.escudo.files[0]
-               const lector = new FileReader()
-               lector.addEventListener('load',()=>{
-                    valorescudo = lector.result
-               })
-               lector.readAsDataUrl(archivo)
-          })
           
           let nombre = this.div.getElementsByTagName('input')[1]
           let valornombre = nombre.value
@@ -76,9 +75,7 @@ export class VistaAlta extends Vista {
           
           let comunidad = this.div.getElementsByTagName('select')[0]
           let valorcomunidad = comunidad.value
-
-
-          let objeto = new Equipos(valorescudo,valornombre,valordescripcion,valorfecha,valorligas,colores,valorascenso,valorcomunidad)
+          let objeto = new Equipos(this.valorescudo,valornombre,valordescripcion,valorfecha,valorligas,colores,valorascenso,valorcomunidad)
           this.controlador.insertar(objeto)
      }
 

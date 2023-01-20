@@ -11,7 +11,7 @@ export class Modelo{
 		this.callback = callback
 		this.callbacks = []	// Array de callbacks para implementar el observador
 		callback()
-		this.idb = new idb()
+		this.idb = new idb(this.controlador)
 	}
 	
 	/**
